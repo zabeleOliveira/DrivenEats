@@ -1,0 +1,191 @@
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 414px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+.topo {
+    color: #FFFFFF;
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 10px;
+    box-sizing: border-box;    
+}
+
+.topo h1 {
+    font-family: "Righteous", sans-serif;
+}
+
+.topo h1,
+.topo p {
+    margin: 0;
+}
+
+.pedidos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17.5px;
+}
+
+.pratos h2 {
+    font-family: "Righteous", sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.pratos p {
+    opacity: 0.6;
+}
+
+.pratos,
+.bebidas,
+.sobremesas {
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: row;
+    gap: 17.5px;
+    overflow-x: hidden;  
+}
+
+.primeiro {
+    margin: 0 0 5px 0;
+}
+
+.agora {
+    margin: 15px 0 5px 0;
+}
+
+.porfim {
+    margin: 15px 0 5px 0;
+}
+
+.prato1 {
+    background-color: #ffffffc2;
+    width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 1px;
+    position: relative;
+}
+
+.prato1 img {
+    width: 144px;
+    height: auto; 
+    border-radius: 4px; 
+    opacity: 1; 
+    margin-top: 25px;
+}
+
+.prato1 h6,
+.prato1 p {
+    margin: 2px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 15px;
+}
+
+.finalizar {
+    background-color: #FFFFFF;
+    width: 414px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 10px 0;
+}
+
+.selecionar {
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.selecionar p {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.selected {
+    border-color: #32B72F;
+}
+
+.prato1 ion-icon {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 24px;
+    color: #32B72F;
+}
+
+
+.prato1.selected ion-icon {
+    display: block;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000; 
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    background: #32B72F; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.modal-buttons button#cancel-button {
+    background: #CF2B2B; 
+}

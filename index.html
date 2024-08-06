@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="topo">
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+    </div>
+    <div class="pedidos">
+        <h2 class="primeiro">Primeiro, seu prato</h2>
+        <div class="pratos">
+            <div class="prato1">
+                <img src="projeto__driven-eats__imagens/pf_calabresa.png">   
+                <h6>Prato feito calabresa</h6>
+                <p>Feijão, arroz, batata e calabresa</p>
+                <h6>R$ 14,90</h6>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="prato1">
+                <img src="projeto__driven-eats__imagens/pf_carne.jpg">   
+                <h6>Prato feito carne</h6>
+                <p>Feijão, arroz, batata e carne</p>
+                <h6>R$ 14,90</h6>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="prato1">
+                <img src="projeto__driven-eats__imagens/pf_frango.jpg">   
+                <h6>Prato feito frango</h6>
+                <p>Feijão, arroz, batata e frango</p>
+                <h6>R$ 14,90</h6>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+        <h2 class="agora">Agora, sua bebida</h2>
+        <div class="bebidas">
+            <div class="prato1">
+                <img src="projeto__driven-eats__imagens/coca.png">   
+                <h6>Coquinha gelada</h6>
+                <p>Lata 350ml</p>
+                <h6>R$ 4,90</h6>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="prato1">
+                <img src="projeto__driven-eats__imagens/fanta.png">   
+                <h6>Fantinha gelada</h6>
+                <p>Lata 350ml</p>
+                <h6>R$ 4,90</h6>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="prato1">
+                <img src="projeto__driven-eats__imagens/suco.png">   
+                <h6>Suquinho gelado</h6>
+                <p>Garrafa 300ml</p>
+                <h6>R$ 4,90</h6>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+        <h2 class="porfim">Por fim, sua sobremesa</h2>
+        <div class="sobremesas">
+            <div class="prato1">
+                <img src="projeto__driven-eats__imagens/brownie.jpg">   
+                <h6>Brownie</h6>
+                <p>Apenas brownie</p>
+                <h6>R$ 7,90</h6>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="prato1">
+                <img src="projeto__driven-eats__imagens/mouse.jpg">   
+                <h6>Mouse</h6>
+                <p>Apenas mouse</p>
+                <h6>R$ 7,90</h6>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="prato1">
+                <img src="projeto__driven-eats__imagens/pudim.jpg">   
+                <h6>Pudim</h6>
+                <p>Apenas pudim</p>
+                <h6>R$ 7,90</h6>
+                <ion-icon name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <div class="finalizar">
+       <div class="selecionar">
+        <p>Selecione os 3 ítens</p>
+        <p>para fechar o pedido</p>
+       </div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <h2>Confirmação de Pedido</h2>
+            <div id="modal-content">
+            
+            </div>
+            <div class="modal-buttons">
+                <button id="confirm-button">Tudo certo, pode pedir</button>
+                <button id="cancel-button">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
